@@ -7,9 +7,9 @@ fun main() {
     val userService = UserService()
 
     //
-    userService.listUsers() // return all Users
-    userService.listUsers("Ali") // return all Users startting with Ali
-    userService.listUsers("ali") // return all Users startting with ali Ali
+    println("result: "+userService.listUsers()) // return all Users
+    println("result: "+userService.listUsers("Al") )// return all Users startting with Al
+    println("result: "+userService.listUsers("al")) // return all Users startting with ali Ali
 
     println("existing Product: " + shop.buyProduct("P1", 1))
     println("not existing Product: " + shop.buyProduct("P3", 1))
